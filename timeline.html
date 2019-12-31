@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://use.fontawesome.com/78c8c4d0c9.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f8ff;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #474e5d;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #436b95;
+  border: 4px solid #474e5d;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #436b95;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #436b95 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 1px 20px;
+  background-color: #436b95;
+  position: relative;
+  border-radius: 8px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #436b95 transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+  
+  }
+}
+</style>
+
+
+
+</head>
+<body>
+
+<h1>A lifetime on a timeline</h1>
+
+<div class="timeline">
+
+    <div class="container left">
+    <div class="content">
+    <h4>Won a graduate poster session! </h4>
+      <h2>Conference Speaker</h2>
+      <h3><a href="https://www.minkwic.org/" target="_blank">MINK WIC Conference</a>, Kansas City, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2019 Fall
+      <p>MINK WIC is a regional tech conference that celebrates women in computing through two days of tech talks, workshops, networking and a career fair.</p>
+    </div>
+  </div>
+  
+    <div class="container right">
+    <div class="content">
+    <h4>First time speaking an a non-academic conference! </h4>
+      <h2>Conference Speaker</h2>
+      <h3><a href="https://getconfomaha.com/" target="_blank">Gender Equity in Tech Conference</a>, Omaha, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2019 Spring
+      <p>Spoke about inclusive survey practices at a one-day conference to amplify & celebrate the voices of gender expansive individuals in tech.</p>
+    </div>
+  </div>
+  
+      <div class="container left">
+    <div class="content">
+    <h4>First time officially teaching a course!</h4>
+      <h2>Instructor of record, “Introduction to IT Innovation”, ITIN 1110</h2>
+      <h3>University of Nebraska Omaha, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2019 Fall
+      <p>Introduced 15 interdisciplinary undergraduates to tools, techniques, and methods for creatively addressing and critically evaluating challenging problems in new ways using information technology.</p>
+    </div>
+  </div>
+  
+      <div class="container right">
+    <div class="content">
+    <h4>Who says volunteering can't be fun?</h4>
+      <h2>Project Manager of the Software Development Team</h2>
+      <h3>Anime Nebraskon, Omaha, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2019 - Present
+      <p>Manage a team of 3-5 volunteer developers who build & maintain the self-hosted website, inventory system and ticketing portal.</p>
+    </div>
+  </div>
+  
+        <div class="container left">
+    <div class="content">
+    <h4>Starting the toughest adventure yet!</h4>
+      <h2>Ph.D. Information Technology (Human-Centered Computing concentration)</h2>
+      <h3>University of Nebraska Omaha, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018 Spring
+      <p>Officially aspiring to be more like Dr. Christine Toh.
+      <br>Expected to graduate in 2021.</p>
+    </div>
+  </div>
+  
+    <div class="container left">
+    <div class="content">
+    <h4>Professional organizations are really just grown-up student organizations</h4>
+      <h2>Committee member</h2>
+      <h3><a href="https://bpart.dudaone.com/" target="_blank">Broadening Participation of Underrepresented Groups</a>, ASME Design Engineering Division, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018 – Present
+      <p>
+      </p>
+    </div>
+  </div>
+  
+    <div class="container left">
+    <div class="content">
+      <h4>Sharing the design bug with local children!</h4>
+      <h2>Workshop co-lead, “Introduction to Creativity and Design in IT Innovation”</h2>
+      <h3>Code Crush, University of Nebraska Omaha, USA</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2017 & 2018
+      <p>Trained 15 local girls aged 9 – 12 in low & medium fidelity prototyping principles and tools in a 2 hour hands-on session.</p>
+    </div>
+  </div>
+  
+  <div class="container right">
+    <div class="content">
+     <h4>Started working with the amazing Dr. Christine Toh!</h4>
+      <h2>Research Assistant Trust & Home Automation</h2>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2016 – 2017 
+      <p>Designed & conducted an experimental user study (ANOVA) with semi-structured interviews (content analysis) on trust perceptions of voice assistants in smart home settings.</p>
+            <h2>Research Assistant Design Information</h2>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018 – present
+      <p>Designed & conducted several 3-hour qualitative protocol analysis studies with practicing designers on their design processes and information organization strategies.</p>
+    </div>
+  </div>
+  
+      <div class="container left">
+    <div class="content">
+      <h4>A small taste of the start-up life!</h4>
+      <h2>2nd place Innovation Team</h2>
+      <h3>Startup Live, Innsbruck, Austria </h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2015 Fall
+      <p>
+      Collaborated with a great team on an early-phase start-up idea. Conducted surveys with potential users and co-wrote the final pitch.</p>
+    </div>
+  </div>
+  
+        <div class="container left">
+    <div class="content">
+      <h4>Taking my education abroad!</h4>
+      <h2>M.A. Management, Communication and IT</h2>
+      <h3>Management Centre Innsbruck, Austria </h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2015-2017
+      <h2>M.S. Management Information Systems</h2>
+      <h3>University of Nebraska Omaha, USA</h3>
+      <p>Dual-degree thesis: Investigating the Factors Influencing User Perceptions of Trust in Smart Home Devices</p>
+    </div>
+  </div>
+  
+    <div class="container right">
+    <div class="content">
+      <h4>First experience with design to achieve business needs (vs design for art)</h4> 
+      <h2>Intern Website Design</h2>
+      <h3>Dubbele:punt Design, The Netherlands </h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2014 Summer
+      <p>Analyzed & re-designed 2 product websites with accompanying design rationale documents to improve Search Engine Optimization ranking.</p>
+    </div>
+  </div>
+  
+  <div class="container left">
+    <div class="content">
+      <h4>Best internship experience thanks to these awesome people!</h4>
+      <h2>Intern Product Management</h2>
+      <h3>Raaskal Games, The Netherlands</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2013 Summer
+      <p>Re-designed and wrote content for the website, and assisted in product design and testing as needed.</p>
+    </div>
+  </div>
+  
+  <div class="container right">
+    <div class="content">
+      <h4>First government-industry project!</h4>
+      <h2>Team Secretary ‘Summer in Asia’ Project </h2>
+      <h3>McKinsey & Company, China </h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2012 Summer
+      <p>Collaborated, conducted & reported on 2-month ethnographic research (surveys, interviews & fieldnotes) at the Chinese University of Hong Kong to support Dutch-Chinese relations.</p>
+    </div>
+  </div>
+  
+  <div class="container right">
+    <div class="content">
+      <h4>First academy-industry research project!</h4>
+      <h2>Think Tank member</h2>
+      <h3>Dirkzwager, The Netherlands</h3>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2010 – 2012
+      <p>Conducted & reported qualitative research in a Think Tank on the tension between Managerialism and Professionalism for lawyers in a Dutch law firm with an interdisciplinary team of 15 fellow honor students of the Radboud University Nijmegen.</p>
+    </div>
+  </div>
+  
+      <div class="container right">
+    <div class="content">
+      <h4>Everything is better with friends</h4>
+      <h3>Radboud University Nijmegen, The Netherlands</h3>
+      <h2>Study Association Psychology Nijmegen (SPIN)</h2>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2009 – 2011
+      <p>Secretary in the Study Trip Committee: Responsible for all incoming and outgoing communication, assisting the president with secretarial duties, co-organizing the trip, promoting the event and responsible for the 30 participants during the six-day trip to Edinburgh (UK).</p>
+      <h2>European Students' Forum (AEGEE)</h2>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2011 - 2014
+<p>Co-founder and Chair of the Internal Formal Activities Committee: Contact person internal and external affairs, co-organizing activities and trainings and workshops for members.
+<br>Treasurer and co-organizer of the ‘Summer University’: Responsible for the finances surrounding the Summer University Project and co-organizing activities for a 15-day international cultural exchange event for 25 European students.</p>
+	<h2>Bioinformatics and IT PhD Student organization</h2>
+    <i class="fa fa-calendar-o" aria-hidden="true"></i> 2018 - Present
+    <p>President: Created and manage the group social media presence (Slack) and co-organize monthly events for professional and personal advancement.</div>
+  </div>
+  
+    <div class="container right">
+    <div class="content">
+      <h4>Planting the seeds of the future</h4>
+      <h3>Radboud University Nijmegen, The Netherlands</h3>
+      <h2>B.S. Psychology</h2>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2009 – 2012
+      <p>Bachelor Thesis: The Interaction between Beauty, Power and Embodiment.</p>
+      <h2>B.A. Communication and Information Sciences</h2>
+      <i class="fa fa-calendar-o" aria-hidden="true"></i> 2011 – 2014
+<p>Bachelor Thesis: The Interaction between Logo Versions and Nationality on Brand Attitude</p>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
