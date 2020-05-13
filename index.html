@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
+body {
+  	background-color: #F8F8FF;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F8F8FF;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  margin: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {font-weight:bold;}
+
+ul.topnav li a.active {font-weight:bold;}
+
+ul.topnav li.right {float: right; }
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none; padding: 0px; margin: 0px;}
+}
+
+/*Styling the container */
+.hero {  
+  text-align: left;
+  padding: 20px;
+}
+
+/* formatting for hyperlink */
+a:link {
+  color: #D21450;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #D07792;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:hover {
+  color: #880C33;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<ul class="topnav">
+  <li><a href="https://ndamen.github.io"><p style="font-family:'Righteous';color:#D21450;">Nicole Damen</p></a></li> 
+<!-- change this one each time for each active page 
+  	<li><a class="active" href="#home"><p>">Nicole Damen</p></a></li> 
+-->
+  <li class="right"><a href="https://ndamen.github.io/projects" target="_blank">CV</a>
+  <li class="right"><a href="https://ndamen.github.io/research">Research</a></li>
+  <li class="right"><a href="https://ndamen.github.io/projects">Projects</a>
+<!-- Option - if you want the link on the left 
+  <li><a href="https://ndamen.github.io">About</a></li>
+-->
+</ul>
+
+
+<div class="hero">
+  <h1>Hi! I'm Nicole,</h1>
+  <h3>Aspiring UX researcher</h3>
+<!-- RESEARCHER // DESIGNER // STUDENT -->
+  <p>PhD student  at the <a href="https://www.unomaha.edu/college-of-information-science-and-technology/phd-it/index.php" target="_blank">University of Omaha in Nebraska (USA)</a>, supervised by  <a href="https://sites.google.com/a/unomaha.edu/ctoh/home" target="_blank">Dr. Christine Toh</a>.</p>
+</div>
+</body>
+
+
+
+
+
+
+</html>
