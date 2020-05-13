@@ -1,43 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+ </head>
 <style>
-
+/* Importing fonts */
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
 
-
-body {
-  	background-color: #F8F8FF;
-    margin : 0 auto; 
-}
-
-
-h1 {
-	font-family: 'Crete Round', Palatino, serif;
-	font-size: 3em;
-}
-
-h2 {
-	font-family: 'Sniglet', Monaco, monospace;
-    font-size: 2em;
-}
-
-h3 {
-    font-family: 'Sniglet', Monaco, monospace;
-    font-size: 1.5em;
-}
-
-p {
-    font-family: 'Fira Sans', Palatino, serif;
-    font-size: 1em;
-}
-
-
-
-
+/*Styling the top navigation bar */
 ul.topnav {
   list-style-type: none;
   margin: 0;
@@ -67,13 +38,56 @@ ul.topnav li.right {float: right; }
   ul.topnav li {float: none; padding: 0px; margin: 0px;}
 }
 
-/*Styling the container */
-.hero {  
-  text-align: left;
-  padding: 20px;
+/* Styling footer */
+/* Footer positioning */
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-/* formatting for hyperlink */
+#content-wrap {
+  padding-bottom: 9rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;            /* Footer height */
+  background-color: #e4e4ed;
+  text-align: center;
+  margin : 0 auto; 
+  overflow: hidden;
+}
+
+
+/*Styling the body */
+body {
+  	background-color: #F8F8FF;
+    margin : 0 auto; 
+}
+
+h1 {
+	font-family: 'Crete Round', Palatino, serif;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Sniglet', Monaco, monospace;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Sniglet', Monaco, monospace;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Fira Sans', Palatino, serif;
+    font-size: 1em;
+}
+
+/* Styling hyperlinks */
 a:link {
   color: #D21450;
   text-decoration: none;
@@ -88,21 +102,18 @@ a:hover {
   text-decoration: underline;
 }
 
-
-.footer {
-	margin : 0 auto; 
-	width: 100%;
-    background-color: #e4e4ed;
- 	padding: 20px;
+/*Styling the hero container */
+.hero {  
+  text-align: left;
+  padding: 20px;
 }
-
-
 </style>
-</head>
 
-	
+
 <body>
-
+ <div id="page-container"> <!-- keeping footer in place --> 
+   <div id="content-wrap"> <!-- keeping footer in place --> 
+<!-- Creating top navigation bar --> 
 <ul class="topnav">
 <h3>
   <li><a href="https://ndamen.github.io" style="font-style: italic; color:#D21450;">Nicole D.</a></li>
@@ -117,8 +128,8 @@ a:hover {
 -->
 </h3>
 </ul>
-
-
+     
+<!-- Creating hero container --> 
 <div class="hero">
   <h1>Hi! I'm Nicole,</h1>
   <h2 style="font-size:1.5em;">Aspiring UX researcher</h2>
@@ -126,15 +137,16 @@ a:hover {
   <p>PhD student  at the <a href="https://www.unomaha.edu/college-of-information-science-and-technology/phd-it/index.php" target="_blank">University of Omaha in Nebraska (USA)</a>, supervised by  <a href="https://sites.google.com/a/unomaha.edu/ctoh/home" target="_blank">Dr. Christine Toh</a>.</p>
   <p></p> <!-- space for more text -->
 </div>
+
+   </div> <!-- close content wrap --> 
+   
+   <!-- Creating footer --> 
+   <footer id="footer">
+   <p>I'm always happy to chat and collaborate when possible :)</p>
+<p>Let's connect! <a href="mailto:damennb@gmail.com">Email</a> // <a href="https://www.linkedin.com/in/thenicoledamen/" target="_blank">LinkedIn</a> // <a href="https://scholar.google.com/citations?user=sLW_Ov0AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+<p style="font-size:0.9em;">Copyright &copy; 2019-2020 by Nicole B. Damen.</p>
+   </footer>
+ </div> <!-- close page-container --> 
 </body>
-
-<div class="footer">
-<p>I'm always happy to chat and collaborate when possible :)</p>
-<p>Let's connect!</p>
-<p style="font-variant: small-caps;"> <a href="mailto:damennb@gmail.com">Email</a> // <a href="https://www.linkedin.com/in/thenicoledamen/" target="_blank">LinkedIn</a> // <a href="https://scholar.google.com/citations?user=sLW_Ov0AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
-</div>
-
-
-
 
 </html>
