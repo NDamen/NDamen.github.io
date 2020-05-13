@@ -3,11 +3,42 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-@import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+
+
 
 body {
   	background-color: #F8F8FF;
+    margin : 0 auto; 
 }
+
+
+h1 {
+	font-family: 'Crete Round', Arial, sans-serif;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Sniglet', Arial, sans-serif;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Sniglet', Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Fira Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+
+
+
 
 ul.topnav {
   list-style-type: none;
@@ -47,12 +78,10 @@ ul.topnav li.right {float: right; }
 /* formatting for hyperlink */
 a:link {
   color: #D21450;
-  background-color: transparent;
   text-decoration: none;
 }
 a:visited {
-  color: #D07792;
-  background-color: transparent;
+  color: #D21450;
   text-decoration: underline;
 }
 a:hover {
@@ -61,6 +90,16 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.footer {
+	margin : 0 auto; 
+	width: 100%;
+    background-color: #e4e4ed;
+ 	padding: 20px;
+
+}
+
+
 </style>
 
 </head>
@@ -68,7 +107,8 @@ a:hover {
 <body>
 
 <ul class="topnav">
-  <li><a href="https://ndamen.github.io"><p style="font-family:'Righteous';color:#D21450;">Nicole Damen</p></a></li> 
+<h3>
+  <li><a href="https://ndamen.github.io" style="font-style: italic; color:#D21450;">Nicole D.</a></li>
 <!-- change this one each time for each active page 
   	<li><a class="active" href="#home"><p>">Nicole Damen</p></a></li> 
 -->
@@ -78,18 +118,24 @@ a:hover {
 <!-- Option - if you want the link on the left 
   <li><a href="https://ndamen.github.io">About</a></li>
 -->
+</h3>
 </ul>
 
 
 <div class="hero">
   <h1>Hi! I'm Nicole,</h1>
-  <h3>Aspiring UX researcher</h3>
+  <h2 style="font-size:1.5em;">Aspiring UX researcher</h2>
 <!-- RESEARCHER // DESIGNER // STUDENT -->
   <p>PhD student  at the <a href="https://www.unomaha.edu/college-of-information-science-and-technology/phd-it/index.php" target="_blank">University of Omaha in Nebraska (USA)</a>, supervised by  <a href="https://sites.google.com/a/unomaha.edu/ctoh/home" target="_blank">Dr. Christine Toh</a>.</p>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
 </div>
 </body>
 
-
+<div class="footer">
+<p>I'm always happy to chat and collaborate when possible :)</p>
+<p>Let's connect!</p>
+<p style="font-variant: small-caps;"> <a href="mailto:damennb@gmail.com">Email</a> // <a href="https://www.linkedin.com/in/thenicoledamen/" target="_blank">LinkedIn</a> // <a href="https://scholar.google.com/citations?user=sLW_Ov0AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+</div>
 
 
 
