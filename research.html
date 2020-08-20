@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ </head>
+<style>
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+/*Styling the top navigation bar */
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #F8F8FF;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  margin: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {font-weight:bold;}
+
+ul.topnav li a.active {font-weight:bold;}
+
+ul.topnav li.right {float: right; }
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none; padding: 0px; margin: 0px;}
+}
+
+/* Styling footer */
+/* Footer positioning */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 9rem;    /* Footer height */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9rem;            /* Footer height */
+  background-color: #e4e4ed;
+  text-align: center;
+  margin : 0 auto; 
+  overflow: hidden;
+}
+
+
+/*Styling the body */
+body {
+  	background-color: #F8F8FF;
+    margin : 0 auto; 
+}
+
+h1 {
+	font-family: 'Crete Round', Palatino, serif;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Sniglet', Monaco, monospace;
+   	font-size: 2em;
+}
+
+h3 {
+    font-family: 'Sniglet', Monaco, monospace;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Fira Sans', Palatino, serif;
+    font-size: 1em;
+}
+
+/* Styling hyperlinks */
+a:link {
+  color: #D21450;
+  text-decoration: none;
+}
+a:visited {
+  color: #D21450;
+  text-decoration: underline;
+}
+a:hover {
+  color: #880C33;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/*Styling the hero container */
+.hero {  
+  text-align: left;
+  padding: 20px;
+}
+</style>
+
+
+<body>
+ <div id="page-container"> <!-- keeping footer in place --> 
+   <div id="content-wrap"> <!-- keeping footer in place --> 
+<!-- Creating top navigation bar --> 
+<ul class="topnav">
+<h3>
+  <li><a href="https://ndamen.github.io" style="font-style: italic; color:#D21450;">Nicole D.</a></li>
+<!-- change this one each time for each active page 
+  	<li><a class="active" href="#home"><p>">Nicole Damen</p></a></li> 
+-->
+  <li class="right"><a href="https://drive.google.com/file/d/1b-rF6W1dW5GK7qlImP1IcmtrBCiiMD8q/view" target="_blank">1-page Resume</a>
+  <li class="right"><a href="https://ndamen.github.io/research">Research</a></li>
+  <!-- <li class="right"><a href="https://ndamen.github.io/projects">Projects</a> -->
+<!-- Option - if you want the link on the left 
+  <li><a href="https://ndamen.github.io">About</a></li>
+-->
+</h3>
+</ul>
+     
+<!-- Creating hero container --> 
+<!-- Button with "Print-friendly academic resume" -->
+
+<div class="w3-container w3-section w3-content" style="max-width:800px" id="Publications">
+  <!-- Design principles -->
+  <h3><font color="#c30b4e">Design Principles</font></h3>
+    <i>Dissertation work in progress</i>
+  
+  
+<!-- <a href="XXXX" style="color:#436b95" target="_blank">  --> 
+  <p>▸ This is how I design: Discussing design principles in small multidisciplinary teams of design professionals</a><br>  
+  <b>Nicole Damen</b> and Christine Toh <br>
+  Design Computing and Cognition (DCC), 2020</p>
+  
+  <p>▸ Negotiating design knowledge in interdisciplinary teams<br>
+  ⭑ Graduate poster winner<br>
+  <b>Nicole Damen</b><br>
+  Missouri, Iowa, Nebraska, and Kansas Women in Computing conference (MINK WIC), 2019</p>
+   
+  <!-- Information Archetypes Framework -->
+  <h3><font color="#c30b4e">Information in Design</font></h3>
+    <i>Information plays a major role in guiding design behavior.<br>   
+    In this project, we use in-depth qualitative approaches to uncover how designers use information during the design process.</i>
+     
+     <!-- <a href="XXXX" style="color:#436b95" target="_blank">  --> 
+     <p>▸ From Information To Ideas: How Designers Structure Information To
+Support Idea Generation<br>
+     <b>Nicole Damen</b> and Christine Toh <br>
+	International Design Engineering Technology Conferences (ASME IDETC), 2020</p>
+          
+  	<p>▸ <a href="https://doi.org/10.1115/1.4046647" style="color:#436b95" target="_blank">Investigating Information: A Qualitative Analysis of Expert Designers' Information Representation and Structuring Behaviors (IDETC2019-98362)</a><br>    
+    <b>Nicole Damen</b> and Christine Toh <br>
+    Journal of Mechanical Design (ASME JMD), 2020</p>
+      
+  <p>▸ <a href="https://doi.org/10.1115/DETC2019-98362" style="color:#436b95" target="_blank"> Investigating Information: A Qualitative Analysis Of Expert Designers’ Information Representation And Structuring Behaviors</a><br>
+  ⭑ Best paper nominee<br>
+  <b>Nicole Damen</b> and Christine Toh <br>
+  International Design Engineering Technology Conferences (ASME IDETC), 2019</p>
+  
+  <p>▸ <a href="https://doi.org/10.1115/DETC2019-97956" style="color:#436b95" target="_blank"> Towards An Information Archetypes Framework: Exploring The Types Of Information Used In Open Source Design Engagements</a><br>
+  ⭑ Best paper nominee<br>
+  Sue Yi, Kevin Lumbard, <b>Nicole Damen</b>, Matt Germonprez and Christine Toh<br>
+  International Design Engineering Technology Conferences (ASME IDETC), 2019</p>
+  
+  <p>▸ <a href="https://www.cambridge.org/core/journals/proceedings-of-the-international-conference-on-engineering-design/article/looking-for-inspiration-understanding-the-information-evaluation-and-seeking-behavior-of-novice-designers-during-creative-idea-generation/6D13F62F95D9F38AC1DA784E2ECF76B7" style="color:#436b95" target="_blank">Looking for Inspiration: Understanding the Information Evaluation and Seeking Behavior of Novice Designers During Creative Idea Generation</a><br>
+  <b>Nicole Damen</b> and Christine Toh <br>
+  International Conference on Engineering Design (DS ICED), 2019 </p>
+  
+  <!-- Home Automation -->
+  <h3><font color="#c30b4e">Home Automation</font></h3>
+    <i>Connecting man and machine at home.<br>
+    This master thesis project combines an experimental set-up with semi-structured interviews to understand how design decisions influence user trust. </i>    
+    
+   <p>▸ <a href="https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/141/6/061101/368712/Designing-for-Trust-Understanding-the-Role-of?redirectedFrom=fulltext" style="color:#436b95" target="_blank">Designing for Trust: Understanding the Role of Agent Gender and Location on User Perceptions of Trust in Home Automation</a><br>
+  <b>Nicole Damen</b> and Christine Toh <br>
+  Journal of Mechanical Design (ASME JMD), 2019</p>
+    
+   <p>▸ <a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2018/51845/V007T06A033/275200" style="color:#436b95" target="_blank">Implicit And Explicit Trust Behavior: Does Stereotype Congruence Affect User Trust In A Home Automation Device?</a><br>
+  <b>Nicole Damen</b> and Christine Toh <br>
+  International Design Engineering Technology Conferences (ASME IDETC), 2018 </p>
+  
+   <p>▸ <a href="https://asmedigitalcollection.asme.org/IDETC-CIE/proceedings-abstract/IDETC-CIE2017/58219/V007T06A044/258768" style="color:#436b95" target="_blank">Designing for Trust: Understanding the Role of Agent Gender and Location on User Perceptions of Trust in Home Automation</a><br>
+  <b>Nicole Damen</b> and Christine Toh <br>
+  International Design Engineering Technology Conferences (ASME IDETC), 2017 </p>
+  
+  <!-- Other collaborations -->
+  <h3><font color="#c30b4e">Other collaborations</font></h3>
+
+  <p>▸ <a href="https://doi.org/10.1145/3313831.3376412" style="color:#436b95" target="_blank">GPkit: a Human-Centered Approach to Convex Optimization in Engineering Design</a><br>
+Edward Burnell, <b>Nicole Damen</b>, Warren Hoburg <br>
+Conference on Human Factors in Computing Systems (ACM CHI), 2020 </p>
+
+  <!-- <a href="XXXX" style="color:#436b95" target="_blank">  --> 
+   <p>▸ Broadening Participation: Over Ten Years Of Outreach Within The IDETC-DED Community<br>
+  Charlotte de Vries, Kate Fu, Elizabeth Starkey, Christine Toh, <b>Nicole Damen </b>, Shraddha Joshi, Brian Sylcott, and Kathryn Jacobson<br>
+	International Design Engineering Technology Conferences (ASME IDETC), 2020</p>
+        
+    <!-- <a href="XXXX" style="color:#436b95" target="_blank">  --> 
+  <p>▸ Back And Forth: Using Conversation Analysis To Explore Dialogues Of Sharedness Of Mental Models<br>  
+  Sue Yi, <b>Nicole Damen</b> and Christine Toh <br>
+  International Design Engineering Technology Conferences (ASME IDETC), 2020</p>
+
+  <p>▸ <a href="https://digitalcommons.unomaha.edu/isqafacpub/83/" style="color:#436b95" target="_blank">Open Community Health: Workshop Report</a><br>
+    Georg Link, Kevin Lumbard, <b>Nicole Damen</b>, Holly Rosser, Matt Germonprez, Sean Goggins, Andrea Wiggins, Vinod Ahuja, Jonathan Brier, Johanna Cohoon, Aaron Halfaker, James Howison, Don Marti, Greg Newman, Carsten Østerlund, Ray Paik, Becky Rother, and Aaron Schecter.<br>
+  Journal of Peer Production, 2018.</p>
+      
+
+   </div> <!-- close content wrap --> 
+   
+   <!-- Creating footer --> 
+   <footer id="footer">
+   <p>I'm always happy to chat and collaborate when possible :)</p>
+<p>Let's connect! <a href="mailto:damennb@gmail.com">Email</a> // <a href="https://www.linkedin.com/in/thenicoledamen/" target="_blank">LinkedIn</a> // <a href="https://scholar.google.com/citations?user=sLW_Ov0AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+<p style="font-size:0.9em;">Copyright &copy; 2019-2020 by Nicole B. Damen.</p>
+   </footer>
+ </div> <!-- close page-container --> 
+</body>
+
+</html>
