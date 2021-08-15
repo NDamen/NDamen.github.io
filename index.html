@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kreon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+/* Styling footer */
+/* Footer positioning */
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 9rem;    /* Footer height */
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 9rem;            /* Footer height */
+  background-color: #e4e4ed;
+  text-align: center;
+  overflow: hidden;
+}
+
+body {
+/*Styling the body */
+  	background-color: #F8F8FF;
+    margin : 5%; 
+}
+
+h1 {
+	font-family: 'Satisfy', cursive;
+	font-size: 3em;
+}
+
+h2 {
+	font-family: 'Kreon', serif;
+   	font-size: 2em;
+}
+
+h3 {
+    font-family: 'Kreon', serif;
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e4e4ed;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #e4e4ed;
+  color: red;
+}
+
+.topnav a.active {
+  background-color: #e4e4ed;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+/* Create two unequal columns that floats next to each other */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topnav">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i><p>Nicole Damen</p></a>
+  <div class="topnav-right">
+    <a href="#"><i class="fa fa-fw fa-search"></i><p>Research</p></a> 
+    <a href="#"><i class="fa fa-fw fa-envelope"></i><p>Resume</p></a> 
+  </div>
+</div>
+
+
+ <!-- <div style="padding-left:16px">
+/* <h2>Top Navigation with Right Aligned Links</h2>
+  <p>Some content..</p> */ -->
+  <!-- Two Unequal Columns */ -->
+<div class="row">
+  <div class="column left" style="background-color:#F8F8FF;">
+    <h2>Hi, I'm <h1>Nicole!</h1></h2>
+    <!-- <p>Some text..</p> -->
+  </div>
+  <div class="column right" style="background-color:#F8F8FF;">
+	<p><img src="images/noun_education_4083314.png" alt="icon of world with graduation hat" style="float:left;width:10%;height:10%;">
+	<br>I’m a Dutch raised, USA based PhD candidate in human computer interaction aspiring to become a (games) user experience researcher.</p>
+    <br>
+    <br>	
+    
+	<p><img src="images/noun_Dog_1609899.png" alt="icon of dog face" style="float:left;width:10%;height:10%;">
+    <br> When I’m not reading, hiking, or getting my dog out of trouble, I enjoy traveling, eating good food, and playing games with friends.</p>
+  </div>
+</div>
+   
+   <!-- Creating footer --> 
+   <footer id="footer">
+   <p>I'm always happy to chat and collaborate when possible :)</p>
+<p>Let's connect! <a href="mailto:damennb@gmail.com">Email</a> // <a href="https://www.linkedin.com/in/thenicoledamen/" target="_blank">LinkedIn</a> // <a href="https://scholar.google.com/citations?user=sLW_Ov0AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
+<p style="font-size:0.9em;">Copyright &copy; 2021 by Nicole B. Damen.</p>
+   </footer>
+ </div> <!-- close page-container --> 
+
+</body>
+</html>
